@@ -1,0 +1,30 @@
+[Default Applications]
+application/pdf=firefox.desktop
+application/vnd.comicbook+zip=vivaldi-stable.desktop
+application/vnd.comicbook-rar=vivaldi-stable.desktop
+application/x-bzpdf=vivaldi-stable.desktop
+application/x-ext-pdf=vivaldi-stable.desktop
+application/x-gzpdf=vivaldi-stable.desktop
+application/xhtml+xml=vivaldi-stable.desktop
+text/html=vivaldi-stable.desktop
+text/plain=vlc.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
+x-scheme-handler/http=vivaldi-stable.desktop
+x-scheme-handler/https=vivaldi-stable.desktop
+x-scheme-handler/ror2mm=r2modman.desktop
+
+[Added Associations]
+application/octet-stream=vlc.desktop;
+application/pdf=vivaldi-stable.desktop;firefox.desktop;
+application/vnd.comicbook+zip=vivaldi-stable.desktop;
+application/vnd.comicbook-rar=vivaldi-stable.desktop;
+application/x-bzpdf=vivaldi-stable.desktop;
+application/x-ext-pdf=vivaldi-stable.desktop;
+application/x-gzpdf=vivaldi-stable.desktop;
+application/xhtml+xml=vivaldi-stable.desktop;
+text/html=vivaldi-stable.desktop;
+text/plain=vlc.desktop;
+x-scheme-handler/http=vivaldi-stable.desktop;
+x-scheme-handler/https=vivaldi-stable.desktop;
+
+[Removed Associations]

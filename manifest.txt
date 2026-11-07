@@ -1,0 +1,80 @@
+# Manifest of tracked config, relative to $HOME.
+# Blank lines and #-comments are ignored.
+#
+# Two sections. The tag in column 1 decides how tools/link.sh treats the path:
+#
+#   link   Nothing but you and your editor writes this. Safe to symlink from
+#          the repo into place; edits land in the repo automatically.
+#   copy   A program owns this file and rewrites it on its own schedule.
+#          Symlinking works today (verified) but is a standing bet on that
+#          program's write strategy. Snapshot it with sync.sh instead.
+
+# ---------------------------------------------------------------- link ------
+
+# Hyprland — hand-written entry point and fragments
+link  .config/hypr/hyprland.lua
+link  .config/hypr/xdph.conf
+link  .config/hypr/config/animations.lua
+link  .config/hypr/config/autostart.lua
+link  .config/hypr/config/colors.lua
+link  .config/hypr/config/decorations.lua
+link  .config/hypr/config/environment.lua
+link  .config/hypr/config/inputs.lua
+link  .config/hypr/config/misc.lua
+link  .config/hypr/config/monitors.lua
+link  .config/hypr/config/variables.lua
+link  .config/hypr/config/windowrules.lua
+link  .config/hypr/config/workspaces.lua
+
+# Terminals
+link  .config/alacritty/alacritty.toml
+link  .config/alacritty/themes/catppuccin-mocha.toml
+link  .config/kitty/kitty.conf
+link  .config/kitty/themes/catppuccin-mocha.conf
+
+# Shell / session environment
+link  .config/fish/config.fish
+link  .config/uwsm/env
+
+# Editors and TUIs
+link  .config/zed/settings.json
+link  .config/micro/settings.json
+link  .config/micro/colorschemes/catppuccin-frappe.micro
+link  .config/micro/colorschemes/catppuccin-latte.micro
+link  .config/micro/colorschemes/catppuccin-macchiato.micro
+link  .config/micro/colorschemes/catppuccin-mocha.micro
+
+# GTK/Qt/KDE theming: Catppuccin Mocha, mauve accent. Required for the themes to
+# resolve; GTK3 and Qt also need the packages listed in the README.
+link  .config/gtk-3.0/gtk.css
+link  .config/gtk-3.0/catppuccin-mocha.css
+link  .config/gtk-4.0/gtk.css
+link  .config/gtk-4.0/catppuccin-mocha.css
+link  .config/qt5ct/colors/catppuccin-mocha.conf
+link  .config/qt6ct/colors/catppuccin-mocha.conf
+link  .local/share/color-schemes/CatppuccinMochaMauve.colors
+
+# ---------------------------------------------------------------- copy ------
+
+# DMS. `dms setup` regenerates dms/*.lua wholesale — see README.
+copy  .config/hypr/dms/binds.lua
+copy  .config/hypr/dms/binds-user.lua
+copy  .config/DankMaterialShell/settings.json
+copy  .config/DankMaterialShell/themes/catppuccin/theme.json
+
+# Written by nwg-look every time you press Apply
+copy  .config/gtk-3.0/settings.ini
+copy  .config/xsettingsd/xsettingsd.conf
+copy  .config/nwg-look/config
+
+# Written by the Qt/KDE config tools
+copy  .config/qt6ct/qt6ct.conf
+copy  .config/kdeglobals
+
+# Rewritten by btop on exit
+copy  .config/btop/btop.conf
+link  .config/btop/themes/catppuccin_mocha.theme
+
+# Written by xdg-utils / xdg-user-dirs-update
+copy  .config/mimeapps.list
+copy  .config/user-dirs.dirs

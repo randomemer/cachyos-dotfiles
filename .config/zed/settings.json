@@ -7,8 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ui_font_family": "Adwaita Sans",
+  "markdown_preview": {
+    "font_family": "Noto Sans"
+  },
+  "buffer_font_family": "Noto Sans Mono",
   "cli_default_open_behavior": "existing_window",
-  "ui_font_weight": 400.0,
   "project_panel": {
     "dock": "left"
   },

@@ -1,0 +1,26 @@
+{
+  "amdGpuMonitor": {
+    "enabled": true,
+    "variants": [
+      {
+        "gpuPci": "0000:03:00.0",
+        "gpuType": "dGPU",
+        "originalName": "AMD Radeon RX 9070 XT",
+        "description": "Monitor your discrete AMD Radeon RX 9070 XT",
+        "icon": "memory",
+        "id": "variant_1794117256297",
+        "name": "AMD Radeon RX 9070 XT"
+      },
+      {
+        "gpuPci": "0000:12:00.0",
+        "gpuType": "APU",
+        "originalName": "AMD Radeon Graphics",
+        "description": "Monitor your integrated AMD Radeon Graphics",
+        "icon": "memory",
+        "id": "variant_1794117256332",
+        "name": "AMD Radeon Graphics"
+      }
+    ],
+    "popoutStyle": "alt"
+  }
+}

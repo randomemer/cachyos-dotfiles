@@ -61,6 +61,9 @@ copy  .config/hypr/dms/binds.lua
 copy  .config/hypr/dms/binds-user.lua
 copy  .config/DankMaterialShell/settings.json
 copy  .config/DankMaterialShell/themes/catppuccin/theme.json
+# Plugins: `dms plugins lock` writes the lockfile; restore with `dms plugins restore`
+copy  .config/DankMaterialShell/plugins.lock.json
+copy  .config/DankMaterialShell/plugin_settings.json
 
 # Written by nwg-look every time you press Apply
 copy  .config/gtk-3.0/settings.ini

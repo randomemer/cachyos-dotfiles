@@ -12,6 +12,7 @@ x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 x-scheme-handler/http=vivaldi-stable.desktop
 x-scheme-handler/https=vivaldi-stable.desktop
 x-scheme-handler/ror2mm=r2modman.desktop
+inode/directory=dev.duxlabs.files.desktop
 
 [Added Associations]
 application/octet-stream=vlc.desktop;

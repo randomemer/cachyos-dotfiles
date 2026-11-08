@@ -9,13 +9,11 @@
 
 local mainMod = "SUPER"
 
--- Apps. NixOS used alacritty / microsoft-edge / code / nautilus; browser is
--- substituted for what is installed here, `code` is still missing (install
--- visual-studio-code-bin).
+-- Apps
 local terminal     = "kitty"
 local browser      = "vivaldi"
-local editor       = "code"
-local fileExplorer = "nautilus"
+local editor       = "zed"
+local fileExplorer = "dfiles"
 
 local volumeStep = 10 -- percent, was $volumeStep
 

@@ -520,7 +520,15 @@
         },
         "clipboard",
         "cpuUsage",
-        "memUsage",
+        {
+          "id": "amdGpuMonitor:variant_1794117256297",
+          "enabled": true
+        },
+        {
+          "id": "memUsage",
+          "enabled": true,
+          "showInGb": false
+        },
         "notificationButton",
         {
           "id": "battery",
